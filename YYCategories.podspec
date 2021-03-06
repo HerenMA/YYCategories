@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   
   s.subspec 'Core' do |ss|
+    ss.libraries = 'z'
+
     ss.source_files = 'YYCategories/**/*.{h,m}'
     ss.public_header_files = 'YYCategories/**/*.{h}'
   
@@ -26,8 +28,6 @@ Pod::Spec.new do |s|
       sna.requires_arc = false
       sna.source_files = non_arc_files
     end
-
-    ss.libraries = 'z'
   end
 
   s.subspec 'Framework' do |ss|
