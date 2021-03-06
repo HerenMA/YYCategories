@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Framework' do |ss|
-    ss.ios.vendored_framework = 'ios/AFNetworking.framework'
+    ss.ios.vendored_framework = 'ios/YYCategories.framework'
   end
 
   s.frameworks = 'UIKit', 'CoreFoundation' ,'QuartzCore', 'CoreGraphics', 'CoreImage', 'CoreText', 'ImageIO', 'Accelerate'
